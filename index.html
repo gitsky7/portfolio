@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua Strickland — Portfolio</title>
+  <meta name="description" content="Portfolio of Joshua Strickland." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-logo" id="navLogo"></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#experience">Experience</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#skills">Skills</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-decoration"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" id="heroEyebrow"></p>
+        <h1 class="hero-title" id="heroTitle"></h1>
+        <p class="hero-subtitle" id="heroSubtitle"></p>
+        <div class="hero-cta" id="heroCta"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section container reveal" id="about">
+      <div class="section-header">
+        <span class="section-label">01 — About</span>
+        <h2>A little about <em class="text-accent">me</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" id="aboutText"></div>
+        <div class="stats" id="stats"></div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section container reveal" id="experience">
+      <div class="section-header">
+        <span class="section-label">02 — Experience</span>
+        <h2>Where I've <em class="text-accent">worked</em></h2>
+      </div>
+      <div class="timeline" id="experienceTimeline"></div>
+
+      <div class="section-header subsection">
+        <span class="section-label">Education</span>
+      </div>
+      <div class="timeline" id="educationTimeline"></div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section container reveal" id="projects">
+      <div class="section-header">
+        <span class="section-label">03 — Projects</span>
+        <h2>Things I've <em class="text-accent">built</em></h2>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container reveal" id="skills">
+      <div class="section-header">
+        <span class="section-label">04 — Skills</span>
+        <h2>Tools of the <em class="text-accent">trade</em></h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section container-narrow reveal" id="contact">
+      <div class="section-header">
+        <span class="section-label">05 — Contact</span>
+        <h2>Let's <em class="text-accent">talk</em></h2>
+      </div>
+      <p>
+        Have a role, a project, or just want to connect? Send a message and
+        it'll open in your email app, or reach me on any of the links below.
+      </p>
+      <form class="contact-form mt-xl" id="contactForm">
+        <div class="form-group">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-input" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+      </form>
+      <div class="social-links mt-xl" id="socialLinks"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-text" id="footerText"></p>
+      <div class="footer-links">
+        <a class="footer-link" href="#about">About</a>
+        <a class="footer-link" href="#projects">Projects</a>
+        <a class="footer-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
