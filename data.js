@@ -11,7 +11,8 @@ const PROFILE = {
   location: "Magnolia, Texas",
   tagline:
     "Full-stack engineer building AI-powered tools and automation with Python, Java, React and AWS.",
-  email: "joshua.strickland91@outlook.com",
+  email: "joshua@joshuastrickland.dev",
+  photo: "photo.jpg", // leave empty ("") to hide the photo
   resumeUrl: "", // e.g. "resume.pdf" — leave empty to hide the button
 
   links: {

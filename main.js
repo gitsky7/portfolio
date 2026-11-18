@@ -24,6 +24,15 @@
     `<a class="btn btn-outline" href="#contact">Get in touch</a>` +
     (P.resumeUrl ? `<a class="btn btn-ghost" href="${esc(P.resumeUrl)}" target="_blank" rel="noopener">Résumé</a>` : "");
 
+  // Photo
+  const photoBox = $("heroPhoto");
+  if (P.photo) {
+    photoBox.innerHTML = `<div class="hero-photo-frame"><img src="${esc(P.photo)}" alt="${esc(P.firstName)} ${esc(P.lastName)}" width="415" height="415"></div>`;
+    photoBox.querySelector("img").addEventListener("error", () => photoBox.remove());
+  } else {
+    photoBox.remove();
+  }
+
   // About
   $("aboutText").innerHTML = P.about.map((p) => `<p>${esc(p)}</p>`).join("");
   $("stats").innerHTML = P.stats
